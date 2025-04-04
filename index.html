@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop</title>
+    <link href="style/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body class="bg-white">
+
+<!-- Navbar -->
+<nav class="container bg-white shadow-md mx-auto p-6 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="items-center space-x-2 hidden md:flex">
+        <img src="images/logo.png" alt="Logo" class="w-8 h-8">
+        <span class="text-green-600 text-2xl font-bold">GREENSHOP</span>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-3xl text-gray-700">
+        <i class="bx bx-menu"></i>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="hidden md:flex space-x-8 text-gray-700">
+        <a href="#" class="relative font-semibold text-green-600 after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-600 after:mt-1">Home</a>
+        <a href="#" class="hover:text-green-500">Shop</a>
+        <a href="#" class="hover:text-green-500">Plant Care</a>
+        <a href="#" class="hover:text-green-500">Blogs</a>
+    </div>
+
+    <!-- Icons & Login -->
+    <div class="flex items-center space-x-6">
+        <button class="bx bx-search bx-tada text-4xl text-gray-700 hover:text-green-500">
+        </button>
+
+        <button class="bx bx-cart relative text-4xl text-gray-700 hover:text-green-500">
+            <span class="absolute top-0 right-0 bg-green-500 text-white text-xs rounded-full px-1.5 py-0.5">6</span>
+        </button>
+
+        <button class="bg-green-500 text-white hover:bg-green-950 px-4 py-2 rounded-md flex items-center space-x-2">
+            <i class='bx bx-log-in-circle text-3xl' ></i>
+            <span>Login</span>
+        </button>
+    </div>
+</nav>
+
+
+    <!-- Section 1 -->
+    <section class="container bg-gray-100 mx-auto p-6">
+        <div class="max-w-6xl mx-auto flex items-center">
+            <!-- Bagian Kiri: Teks -->
+            <div class="w-1/2">
+                <p class="text-sm text-gray-500 uppercase tracking-wide">Welcome to Greenshop</p>
+                <h1 class="text-5xl font-bold leading-tight mt-2">
+                    LET'S MAKE A <br>
+                    <span class="text-green-500">BETTER PLANET</span>
+                </h1>
+                <p class="text-gray-600 mt-4">
+                    We are an online plant shop offering a wide range of cheap and trendy plants.
+                    Use our plants to create a unique Urban Jungle. Order your favorite plants!
+                </p>
+                <button class="bg-green-500 text-white px-6 py-3 rounded-md mt-6">SHOP NOW</button>
+            </div>
+
+            <!-- Bagian Kanan: Gambar -->
+            <div class="w-1/2 flex justify-end">
+                <img src="images/tanaman_1.png" alt="Plants" class="w-4/5">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 2 -->
+    <section class="container mx-auto px-6 py-10">
+        <div class="flex justify-between items-center">
+            <div class="flex space-x-8">
+                <a href="#" class="text-green-500 font-semibold border-b-2 border-green-500 pb-1">All Plants</a>
+                <a href="#" class="text-gray-600">New Arrivals</a>
+                <a href="#" class="text-gray-600">Sale</a>
+            </div>
+            <select class="border p-2 rounded-md hidden md:flex">
+                <option>Default sorting</option>
+            </select>
+        </div>
+
+        <!-- Grid 1-->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            <!-- Product 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition">
+                <img src="images/tanaman_1.png" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">Barberton Daisy</h3>
+                <p class="text-green-500 font-bold">$119.00</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition">
+                <img src="images/tanaman_2.png" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">Angel Wing Begonia</h3>
+                <p class="text-green-500 font-bold">$169.00</p>
+            </div>
+
+            <!-- Product 3 (Dengan Diskon) -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition relative">
+                <span class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 text-xs rounded">13% OFF</span>
+                <img src="images/tanaman_3.jpg" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">African Violet</h3>
+                <p class="text-green-500 font-bold">$199.00 <span class="text-gray-500 line-through">$229.00</span></p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition">
+                <img src="images/tanaman_5.png" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">Beach Spider Lily</h3>
+                <p class="text-green-500 font-bold">$129.00</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition">
+                <img src="images/tanaman_1.png" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">Barberton Daisy</h3>
+                <p class="text-green-500 font-bold">$119.00</p>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition">
+                <img src="images/tanaman_2.png" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">Angel Wing Begonia</h3>
+                <p class="text-green-500 font-bold">$169.00</p>
+            </div>
+
+            <!-- Product 8 (Dengan Diskon) -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition relative">
+                <span class="absolute top-3 left-3 bg-green-500 text-white px-2 py-1 text-xs rounded">13% OFF</span>
+                <img src="images/tanaman_3.jpg" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">African Violet</h3>
+                <p class="text-green-500 font-bold">$199.00 <span class="text-gray-500 line-through">$229.00</span></p>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="bg-white p-4 rounded-lg shadow-md border hover:border-green-500 transition">
+                <img src="images/tanaman_5.png" alt="Plant" class="w-full h-52 object-contain rounded-md">
+                <h3 class="text-lg font-semibold mt-2">Beach Spider Lily</h3>
+                <p class="text-green-500 font-bold">$129.00</p>
+            </div>
+        </div>
+
+        <!-- Page -->
+        <div class="flex justify-center mt-6 space-x-2">
+            <button class="px-3 py-2 bg-green-500 text-white rounded-md">1</button>
+            <button class="px-3 py-2 bg-gray-200 text-gray-700 rounded-md">2</button>
+            <button class="px-3 py-2 bg-gray-200 text-gray-700 rounded-md">3</button>
+            <button class="px-3 py-2 bg-gray-200 text-gray-700 rounded-md">4</button>
+        </div>
+    </section>
+
+
+    <!-- Section 3 -->
+    <section class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex bg-white p-6 rounded-lg shadow-md">
+            <img src="images/tanaman_6.png" alt="Promo Plant" class="w-1/3 h-auto object-contain">
+            <div class="ml-6">
+                <h3 class="text-lg font-bold">SUMMER CACTUS & SUCCULENTS</h3>
+                <p class="text-gray-600 mt-2">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                <button class="mt-4 px-4 py-2 bg-green-500 text-white rounded-md">Find More</button>
+            </div>
+        </div>
+
+        <div class="flex bg-white p-6 rounded-lg shadow-md">
+            <img src="images/tanaman_8.png" alt="Promo Plant" class="w-1/3 h-auto object-contain">
+            <div class="ml-6">
+                <h3 class="text-lg font-bold">STYLING TRENDS & MUCH MORE</h3>
+                <p class="text-gray-600 mt-2">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                <button class="mt-4 px-4 py-2 bg-green-500 text-white rounded-md">Find More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 py-8 border-t">
+        <div class="container bg-gray-100 mx-auto px-6 flex flex-col md:flex-row items-center justify-between border p-6 rounded-lg">
+            <div class="flex items-center space-x-3">
+                <img src="images/logo.png" alt="Logo" class="w-8 h-8">
+                <span class="text-green-500 font-bold text-lg">GREENSHOP</span>
+            </div>
+            <p><i class="bx bx-current-location text-2xl text-gray-600"></i> <i class="text-gray-600">70 West Buckingham Ave. Farmingdale, NY 11735</i></p>
+            <p><i class="bx bxs-envelope text-2xl text-gray-600"></i> <i class="text-gray-600">contact@greenshop.com</i></p>
+            <p><i class="bx bx-phone-call text-2xl text-gray-600"></i> <i class="text-gray-600"> +88 01911 717 490</i></p>
+        </div>
+        <p class="text-center text-white mt-4">© 2025 GreenShop. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
